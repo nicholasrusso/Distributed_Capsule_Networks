@@ -11,7 +11,7 @@ This blog documents our experiences working on our experiments with capsule netw
 
 ### Nicholas Russo
 - 9 February 2018, _Setting up Xifeng Guo's Capsule Network Implementation_
-- [hello](Home)
+- [hello](test.md)
 
 ### Michael Cantrall
 - First
