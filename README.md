@@ -7,7 +7,7 @@ This blog documents our experiences working on our experiments with capsule netw
 [//]: # (Formatting for links:[hello](test.md))
 [//]: # (Formatting for blog posts: DATE(Day Full month name Year) TITLE)
 ### Sam Hsu
-- 9 February 2018, [_Welcome to our Capsule Networks Blog!_](introduction.md)
+- 9 February 2018, [_Intro to Capsule Networks_](introduction.md)
 
 ### Nicholas Russo
 - 9 February 2018, _Setting up Xifeng Guo's Capsule Network Implementation_
