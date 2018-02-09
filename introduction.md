@@ -1,3 +1,5 @@
-## Welcome to our Capsule Network Blog!
+## Introduction to Capsule Networks
 
-hello!!!
+In October 2017, Hinton et al. presented a replacement for convolutional neural networks, called capsule networks. Capsule networks improve upon the issues with convolutional neural networks, specifically addressing their viewpoint invariance. Convolutional neural networks are good at keeping track of where a certain feature lies within an image, but they cannot encode information about how different features are related to one another. Capsule networks aim to solve this problem, as they are equivariant, meaning that the vector representation of the feature changes along with the change of the feature's orientation, position, and scale within an image. However, although capsule networks require less data, they are slow to train. To the best of our knowledge, there has been no public research regarding attempts to derease the total training time using distributed systems. The objective of our research is to first successfully replicate the results of prior capsule network publications, and then spread the capsule network training across a distributed system to improve the training process and decrease the total runtime. 
+
+In this blog, we will share our experiences throughout our research, implementation, and experiments. Our posts will further explain capsule networks as we learn and understand them more. We will discuss our experimental design and provide progress updates as we run tests and play around with our implementation.
