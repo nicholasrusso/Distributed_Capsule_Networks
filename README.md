@@ -16,4 +16,4 @@ This blog documents our experiences working on our experiments with capsule netw
 - 11 February 2018, [_Discussing How to Distribute Capsule Networks_](implementation.md)
 
 ### Khanh Le
-- First
+- 12 February 2018, [_Testing Capsule Networks_](testing.md)
