@@ -12,8 +12,8 @@ This blog documents our experiences working on our experiments with capsule netw
 ### Nicholas Russo
 - 9 February 2018, _Setting up Xifeng Guo's Capsule Network Implementation_
 
-### Michael Cantrall
-- First
+### Michael Cantrell
+- 11 February 2018, [_Discussing How to Distribute Capsule Networks_](implementation.md)
 
 ### Khanh Le
 - First
