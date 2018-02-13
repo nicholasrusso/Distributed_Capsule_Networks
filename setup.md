@@ -26,13 +26,17 @@
 
 
 ### Trouble Shooting
+
 #### General Installation
 - Your pip version may be linked to a different a different python version. If you are using Python 3.5.5 you need your pip to be linked to Python 3.5.5. Packages do not transfer between python packages so you'll have to install the packages again.
+
 #### Numpy
 - Sometime you can have multiple versions of numpy installed. Uninstall the older numpy version and make sure your current version is updated appropriately.
+
 #### Tensorflow/Keras
 - If you are having trouble import tensorflow or keras, make sure your python version is above 3.5. 
 - If you are using a computer with a GPU, make sure you have Cuda and CuDNN installed. Also, make sure your LD_LIBRARY_PATH evironment variable is set to something similar to export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/extras/CUPTI/lib64
+
 #### Spark
 - TBD
 
