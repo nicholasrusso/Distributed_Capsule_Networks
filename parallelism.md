@@ -13,7 +13,7 @@ Model parallelism is more difficult to implement and not as easily available thr
 ## When to Use
 If there are a large number of parameters and nodes then model parallelism is preferred. Otherwise, use data parallelism.
 
-### Reference
+### References
 [Data Parallelism Image](https://github.com/maxpumperla/elephas/blob/master/elephas.gif?raw=true)
 
 
