@@ -11,6 +11,7 @@ This blog documents our experiences working on our experiments with capsule netw
 
 ### Nicholas Russo
 - 9 February 2018, [_Setting up Xifeng Guo's Capsule Network Implementation_](setup.md)
+- 16 February 2018, [_Parrallelism_](setup.md)
 
 ### Michael Cantrell
 - 11 February 2018, [_Discussing How to Distribute Capsule Networks_](implementation.md)
