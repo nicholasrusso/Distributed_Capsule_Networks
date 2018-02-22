@@ -15,5 +15,11 @@ If there are a large number of parameters and nodes then model parallelism is pr
 
 ### Reference
 [Data Parallelism Image](https://github.com/maxpumperla/elephas/blob/master/elephas.gif?raw=true)
+
+
 [Data Parallelism Information](timdettmers.com/2014/10/09/deep-learning-data-parallelism/)
+
+
 [Model Parallelism Information](timdettmers.com/2014/11/09/model-parallelism-deep-learning/)
+
+
