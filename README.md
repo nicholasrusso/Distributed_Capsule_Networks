@@ -15,6 +15,7 @@ This blog documents our experiences working on our experiments with capsule netw
 
 ### Michael Cantrell
 - 11 February 2018, [_Discussing How to Distribute Capsule Networks_](implementation.md)
+- 22 February 2018, [Usage of Horovod within our Project_](horovodUsage.md)
 
 ### Khanh Le
 - 12 February 2018, [_Testing Capsule Networks_](testing.md)
