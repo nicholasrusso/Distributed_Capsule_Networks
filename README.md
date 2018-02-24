@@ -8,7 +8,7 @@ This blog documents our experiences working on our experiments with capsule netw
 [//]: # (Formatting for blog posts: DATE(Day Full month name Year) TITLE)
 ### Sam Hsu
 - 9 February 2018, [_Intro to Capsule Networks_](introduction.md)
-- 23 February 2018, [_Implementation: Usage of Xifeng Guo's Keras Implementation_](kerasImplemetation.md)
+- 23 February 2018, [_Our Implementation Plan_](ImplementationPlan.md)
 
 ### Nicholas Russo
 - 9 February 2018, [_Setting up Xifeng Guo's Capsule Network Implementation_](setup.md)
