@@ -1,30 +1,37 @@
 ### Results - CPU Tensorflow
 Here are some results running on various numbers of machines on various numbers of epochs using TensorFlow.
 
-5 machines, 1 epoch:
+#### 5 machines, 1 epoch:
 Each machine gets 120 images
 Accuracies: 0.97388 avg (0.97380, 0.97400, 0.97380, 0.97400, 0.97380)
 Time: 2s/step
 
-5 machines, 5 epochs:
+
+#### 5 machines, 5 epochs:
 Accuracies: 
 - Epoch 1: 0.97142 avg (0.97140, 0.97150, 0.97140, 0.97140, 0.97140)
 - Epoch 2: 0.98610 avg (0.98610, 0.98610, 0.98610, 0.98610, 0.98610)
 - Epoch 3: accuracy did not improve
 - Epoch 4: 0.98966 avg (0.98970, 0.98960, 0.98970, 0.98970, 0.98960)
 - Epoch 5: 0.99250 avg (0.99250, 0.99250, 0.99250, 0.99250, 0.99250)
+
 Time: 2s/step
 
-15 machines, 1 epoch:
+
+#### 15 machines, 1 epoch:
 Each machine gets 40 images
+
 Accuracies: 0.316253 avg (0.31620, 0.31620, 0.31620, 0.31620, 0.31720, 0.31600, 0.31620, 0.31680, 0.31650, 0.31620, 0.31550, 0.31620, 0.31620, 0.31620, 0.31600)
+
 Time: 88s, 2s/step
 
-15 machines, 5 epochs:
+
+#### 15 machines, 5 epochs:
 Accuracies:
 - Epoch 1: 0.76042 avg (0.76040, 0.76040, 0.76020, 0.76060, 0.76040, 0.76010, 0.76040, 0.76040, 0.76050, 0.76090, 0.76040, 0.76040, 0.76040, 0.76040, 0.76040)
 - Epoch 2: 0.960746 avg (0.96070, 0.96060, 0.96110, 0.96090, 0.96050, 0.96050, 0.96080, 0.96080, 0.96060, 0.96080, 0.96050, 0.96090, 0.96080, 0.96080, 0.96090)
 - Epoch 3: accuracy did not improve
 - Epoch 4: 0.97889 avg (0.97890, 0.97890, 0.97900, 0.97880, 0.97890, 0.97880, 0.97890, 0.97890, 0.97890, 0.97890, 0.97880, 0.97890, 0.97890, 0.97900, 0.97890)
 - Epoch 5: 0.98614 avg (0.98620, 0.98620, 0.98620, 0.98590, 0.98620, 0.98620, 0.98620, 0.98610, 0.98620, 0.98610, 0.98610, 0.98610, 0.98620, 0.98600, 0.98620)
+
 Time: 2s/step
