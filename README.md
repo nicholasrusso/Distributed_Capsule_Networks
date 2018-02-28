@@ -9,6 +9,7 @@ This blog documents our experiences working on our experiments with capsule netw
 ### Sam Hsu
 - 9 February 2018, [_Intro to Capsule Networks_](introduction.md)
 - 23 February 2018, [_Our Implementation Plan_](ImplementationPlan.md)
+- 27 February 2018 [_Partial Results using TensorFlow without GPU_](CPU_Results1.md)
 
 ### Nicholas Russo
 - 9 February 2018, [_Setting up Xifeng Guo's Capsule Network Implementation_](setup.md)
