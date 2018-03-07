@@ -19,6 +19,31 @@ While this modification leads to "more noisy" updates, it also allows us to take
 SGD modifies all parameters in a network equally in proportion to a given learning rate. However, given that the learning rate of a network is the most important hypyerparameter to tune and a hard tedious hyperparameter to set correctly, many people have suggest to adaptively tune the learning rate as the network is trained
 
 #### Adagrad
-First introduced by Duchi et al [1], Adagrad adapts the learning rate to the network parameters. Larger updates are performed on parameters that change infrequently while smaller updates are done on parameters that change frequently. In other words, weights that have frequently updated/large gradients will scale the size of the update down, or lower the learning rate for the parameter. On the other hand, weights that have infrequent updates/smaller gradients in the cache will scale up the size of the update, or raise the learning rate for the specific parameter.
+First introduced by Duchi et al [1], Adagrad adapts the learning rate to the network parameters. Larger updates are performed on parameters that change infrequently while smaller updates are done on parameters that change frequently. 
+```
+cache += (dW ** 2)
+W += -lr * dW / (np.sqrt(cache) + eps)
+```
+Weights that have frequently updated/large gradients in the cache will scale the size of the update down, or lower the learning rate for the parameter. On the other hand, weights that have infrequent updates/smaller gradients in the cache will scale up the size of the update, or raise the learning rate for the specific parameter.
 
-Advantage of Adagrad is that we no longer have to tune the learning rate. In the test, we will use the initial learning rate at 0.01 and allow the adaptive nature of the algorithm to tune the learning rate on a per-parameter basis. However, the drawback of Adagrad is that it will result in an update that is really small, too small for the network to actually learn anything in later epochs.
+Advantage of Adagrad is that we no longer have to tune the learning rate. In the test, we will use the initial learning rate at 0.01 and allow the adaptive nature of the algorithm to tune the learning rate on a per-parameter basis. However, the drawback of Adagrad is from the accumulated cache. It will keep monotomously growing during the training process, and dividing a small number (the gradient0 with large number (the cache) will result in an update that is really small, too small for the network to actually learn anything in later epochs.
+
+#### Adadelta
+The Adadelta algorithm was proposed by Zeiler et al [2]. Adadelta can be seen as an extension to Adagrad that seeks to reduce the decreasing learning rated in later epochs.
+
+#### RMSprop
+RMSprop algorithm is an (unpublised) optimization algorithm shown in the slides of Geoffrey Hinton's coursera class.
+```
+cache = decay_rate * cache + (1 - decay_rate) * (dW ** 2)
+W += -lr * dW / (np.sqrt(cache) + eps)
+```
+RMSprop also attempts to rectify the negative effects of globally accumulated cache by converting the cache into an exponentially weighted moving average. The "moving average" aspect of RMSprop allows the cache to "leak out" old squared gradients and replace them with newer "fresher" ones. This will aboid monotonically decreasing learning rates during training process.
+
+#### Adam
+Adam (Adaptive Moment Estimation) is essentially RMSprop with momentum added to it:
+```
+m = beta1 * m + (1 - beta1) * dW
+v = beta2 * v + (1 - beta2) * (dW ** 2)
+x += -lr * m / (np.sqrt(v) + eps)
+```
+The value of both m and v are similar to SGD momentum, relying on their respective previous values from time t - 1. the value m represents the first moment (mean) of the gradients while v is the second moment (variance). The actual update to W is near identical to RMSprop, only now we use the "smoothed" version of m rather than the raw gradient dW.
