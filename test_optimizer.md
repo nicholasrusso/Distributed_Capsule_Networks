@@ -70,4 +70,4 @@ Those optimizers are the most currently in deep learning models. We will test th
 | SGD with momentum   |          |
 | Adagrad             |          |
 | RMSprop             |          |
-| Adam                |          |
+| Adam                | 0.9953   |
