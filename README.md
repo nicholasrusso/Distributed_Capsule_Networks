@@ -19,9 +19,11 @@ This blog documents our experiences working on our experiments with capsule netw
 ### Michael Cantrell
 - 11 February 2018, [_Discussing How to Distribute Capsule Networks_](implementation.md)
 - 22 February 2018, [_Usage of Horovod within our Project_](horovodUsage.md)
+- 3 March 2018, [_Experiement Time!_](michaelExperiments.md)
+- 7 March 2018, [_A Summary of What I Learned Throughout The Quarter_](whatMichaelLearned.md)
+
 
 ### Khanh Le
 - 12 February 2018, [_Testing Capsule Networks_](testing.md)
 - 1 March 2018,  [_Formal Testing Plan_](testingplan.md)
 - 7 March 2018,  [_Testing Capsule Network with different optimizers_](test_optimizer.md)
-- 8 March 2018,  [_Testing Capsule Network with different routing iterations_](test_routing_iterations.md)
