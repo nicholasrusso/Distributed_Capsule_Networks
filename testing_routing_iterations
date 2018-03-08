@@ -1,3 +1,0 @@
-## Testing Capsule Network with different routing iterations
-
-Routing iterations is the number of times we need to repeat the dynamic routing algorithm. At first, we assume all the primary capsules (PrimaryCap layer) will be fully connected with digit capsules (DigitCaps)
