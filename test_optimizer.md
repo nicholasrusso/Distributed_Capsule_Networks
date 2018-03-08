@@ -8,7 +8,7 @@ Vanilla gradient descent performs only one weight update per epoch, making it ve
 
 #### Stochastic gradient descent (SGD)
 SGD applies multiple weight updates per epoch by computing the gradient on small mini-batches of training data, instead of the entire training set. To yield a batch, we sample our data, usually by randomizing the training samples before applying SGD since the algorithm is quite sensitive to batches. 
-```
+```python
 while True:
    batch = next_training_batch(data, batch_size)
    Wgradient = evaluate_gradient(loss, batch, W)
@@ -18,7 +18,7 @@ While this modification leads to "more noisy" updates, it also allows us to take
 
 ### SGD with Momentum
 The goal of the momentum is to build upon the standard weight update to include a momentum term to allow the model to obtain lower loss and higher accuracy in less epochs. The momentum should increase the strength of updates for dimensions who gradients point in the same direction and then decrease the strength of updates for dimensions who gradient switch directions.
-```
+```python
 v = gamma * v - alpha * dW
 W += v
 ```
@@ -28,7 +28,7 @@ SGD modifies all parameters in a network equally in proportion to a given learni
 
 #### Adagrad
 First introduced by Duchi et al [1], Adagrad adapts the learning rate to the network parameters. Larger updates are performed on parameters that change infrequently while smaller updates are done on parameters that change frequently. 
-```
+```python
 cache += (dW ** 2)
 W += -lr * dW / (np.sqrt(cache) + eps)
 ```
@@ -41,7 +41,7 @@ The Adadelta algorithm was proposed by Zeiler et al [2]. Adadelta can be seen as
 
 #### RMSprop
 RMSprop algorithm is an (unpublised) optimization algorithm shown in the slides of Geoffrey Hinton's coursera class.
-```
+```python
 cache = decay_rate * cache + (1 - decay_rate) * (dW ** 2)
 W += -lr * dW / (np.sqrt(cache) + eps)
 ```
@@ -49,7 +49,7 @@ RMSprop also attempts to rectify the negative effects of globally accumulated ca
 
 #### Adam
 Adam (Adaptive Moment Estimation) is essentially RMSprop with momentum added to it:
-```
+```python
 m = beta1 * m + (1 - beta1) * dW
 v = beta2 * v + (1 - beta2) * (dW ** 2)
 x += -lr * m / (np.sqrt(v) + eps)
