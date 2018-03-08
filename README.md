@@ -11,6 +11,8 @@ This blog documents our experiences working on our experiments with capsule netw
 - 23 February 2018, [_Our Implementation Plan_](ImplementationPlan.md)
 - 27 February 2018 [_Partial Results using TensorFlow without GPU_](CPU_Results1.md)
 - 7 March 2018 [_Batch Size vs. Epochs vs. Iterations_](batch_size.md)
+- 8 March 2018 [_More Experimental Results_](More_Results.md)
+- 8 March 2018 [_What I've Learned_](Sam_learned.md)
 
 ### Nicholas Russo
 - 9 February 2018, [_Setting up Xifeng Guo's Capsule Network Implementation_](setup.md)
