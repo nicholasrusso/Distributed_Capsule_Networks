@@ -26,7 +26,9 @@ of machines used. With 15 machines, we were able to decrease the training time f
 per epoch to 88 seconds per epoch. Our second experiment used a GPU version of TensorFlow and a 
 CPU version of Horovod. In these experiments, we saw significant speed ups. Our best result was 
 able to match the original implementations accuracy while reducing the training down to 60 seconds 
-with 15 machines. Our third experiment used a GPU version of TensorFlow and a GPU version of
+with 15 machines.
+![mach](machines.png)
+Our third experiment used a GPU version of TensorFlow and a GPU version of
 Horovod using NCCL 2 for all-reduce functions. The results from this experiment were similar 
 to the second experiment but the reduction of the distributed model completed significantly 
 faster. From all of these experiments, our accuracy was similar to all of the open source non-distributed versions.
@@ -36,3 +38,5 @@ has been able to match the original papers results. In summary, our results aver
 on our validation test set and acheive a maximum accuracy of 99.7% accuracy. These averages were taken
 from training over 100 epochs 3 times. From these experiments, we can see that distributing capsule networks significantly 
 decreases the total training while maintaining similar accuracy.
+### Accuracy
+![train](training.png)
