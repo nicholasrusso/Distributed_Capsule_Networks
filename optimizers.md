@@ -37,7 +37,9 @@ The Adam optimizer uses a combination of the Momentum and RMSProp optimizer.
 The RMSProp optimizer is an adaptive learning rate optimizer. At each step, RMSProp divides
 the learning rate by the expontential decay of the squared gradients. The Adam optimizer stores
 the average of past squared gradients(RMSProp) in addition to average of past gradients (Momentum)
+![adam](https://3qeqpr26caki16dnhd19sv6by6v-wpengine.netdna-ssl.com/wp-content/uploads/2017/05/Comparison-of-Adam-to-Other-Optimization-Algorithms-Training-a-Multilayer-Perceptron.png)
 
+### A comparison of Optimizers
 ![comparison](http://2.bp.blogspot.com/-q6l20Vs4P_w/VPmIC7sEhnI/AAAAAAAACC4/g3UOUX2r_yA/s1600/s25RsOr%2B-%2BImgur.gif)
 
 ### References
