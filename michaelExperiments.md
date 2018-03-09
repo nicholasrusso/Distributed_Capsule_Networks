@@ -6,4 +6,9 @@ This part was a pain in the butt. I had to simultenously learn how to do several
 
 ![alt text](FreeMemory.png)
 
-When we first started trying to run experiments, we realized that they were running a lot slower than we initially expected. 
+In this experiment I am running on five machines. This image details the specifications and resources available on the five machiens I was using. These machines are actually open to use by anyone at my school. The highest I have ever seen the number highlighted in the image is around 4GB. I needed several GB of free memory if I wanted to run my experiments at any reasonable speed. When I started trying to run experiments, I actaully kept getting a bunch of memory errors. I then checked the ammount of free memory and realized that on one of the machines it was only around 40MB. Somebody was running a program on one of the machines I was attempting to use that was eating up all of the memory, leaving me with basically nothing to work with. It was at this moment that I realized how much of a competition it would be to get access to several computers simultaneously, each with enough free memory to train my network.
+
+Finally, I was able to get a few GB on 5 machines and successfully ran some experiments. In order to understand any of the data that was being recording, I used a tool called "TensorBoard" which took in some of the log files generated throughout the training and displayed it in nice graphs. Here is an example of what TensorBoard provided me with.
+
+![alt text](MichaelTensorBoard.png)
+
