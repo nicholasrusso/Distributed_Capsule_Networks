@@ -18,7 +18,7 @@ This blog documents our experiences working on our experiments with capsule netw
 - 9 February 2018, [_Setting up Xifeng Guo's Capsule Network Implementation_](setup.md)
 - 16 February 2018, [_Parallelism_](parallelism.md)
 - 3 March 2018, [_Optimizers_](optimizers.md)
-- 7 March 2018, [_An Overview of Distributed Capsule Networks_](optimizers.md)
+- 7 March 2018, [_An Overview of Distributed Capsule Networks_](overviewHorovod.md)
 
 
 ### Michael Cantrell
