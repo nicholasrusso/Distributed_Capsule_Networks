@@ -1,20 +1,19 @@
 ### A Summary of What I Learned Throughout The Quarter
 This quarter, I went through a lot of change. I got accepted to my school's masters program, I started my first graduate level classes, and I started trying to narrow down a project I want to work on for my thesis. However, perhaps the largest challenge I faced was tackling one of the newest, least explored types of neural networks: capsule networks. Mind you that at the beginning of this quarter I barely knew what a neural network was. Not only did my team attempt to reproduce the results published in the two papers on capsule networks, but we attempted to take it one step further and do so within a distributed system of computers. Needless to say, I had a lot to learn if I wanted to be valuable to my team in any way. So I wanted to dedicate one of my blog posts to recapping several of the main topics I learned about throughout the quarter.
 
+Also, before I start, I have to give a big shout out to [3Blue1Brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw) for [his youtube series on neural networks](https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi). This youtube series helped me understand now only what a neural network is, but also some of the subtopics such as gradient descent.
+
 #### Neural Networks:
-(body)
+Human brains are amazing. Our brains do all sorts of crazy computation constantly without even having to think about it. When we look at a picture of a cat, we can tell immediately that it is a cat. We can interpret written sentences and almost always understand exactly what the writer's intended meaning was. We can quickly learn how to play video games at a reasonably good level. However, give any of these problems to a computer and the problem immediately becomes much more complex. This is where neural networks come in. They are actually inspired by the structure of the brain through linked together pieces called "neurons". These neurons can contain a number between 0 and 1, which is called its "activation". There are often several layers of these neurons connected to one another in different ways depending on the type of network. How strong each of these connections between layers are depends on the "weight" of that connection. Both of these values, along with a final number called the "bias", are used to perform mathematical operations on the input as it is being passed through the network from the first layer (the input layer) all the way to the last layer (the output layer). All of these values: the activation of a neuron, the weight of a connection, etc. are determined through "learning".
 
-#### Gradient Descent:
-(body)
-
-#### TensorFlow:
-(body)
-
-#### Keras:
-(body)
+#### How Networks "Learn":
+In order to train a network, you need training data. What this data is depends on what you are training the network to do. If you want to train a network to classify animals, you need a bunch of pictures of animals labeled with the type of animal that is in the picture. You then pass in all of the inputs through your neural network and see what the output of the final layer is. This output is normally just which of the neurons in the final layer has the highest activation after the input data has passed all the way through the network. But then the network needs to modify itself (the weights and biases) in order to have a higher and higher accuracy as times go on. Using some complex multidimensional calculus, we want to "descent the gradient" of the mysterious function we are traversing in order to approach a minimum, which is the version of the network that is trained in such a way that it will accurately be able to perform whatever task we are training it for.
 
 #### Convolutional Neural Networks:
 (body)
 
 #### Capsule Networks:
 (body)
+
+#### Conclusion:
+I know a lot of these explanations are oversimplifications, and a I definitely skipped a lot of important machine learning topics. However, the main motivation behind this blog post is to remind myself, and any others who happen to stumble across this blog, that learning how machines learn is extremely interesting and fun despite the fact that it can seem intimidating when you first start out. If I was able to have even a fraction of an understanding of a complex new technology written about in an extremely new paper written by the master of machine learning himself, Geoffrey Hinton, then anyone can pick up machine learning to some degree.
