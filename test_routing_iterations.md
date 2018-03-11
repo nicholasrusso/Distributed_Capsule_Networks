@@ -18,7 +18,9 @@ Therefore, after *r* times, all outputs for higher level capsules were calculate
 
 
 ### How many routing iterations are sufficient?
-In the paper, Hinton et al claims that more iterations tends to overfit the data and it is recommended to use 3 routing iterations in practice. To test his idea, we will try to train the Capsule Network with 3, 5, 10, 15 iterations and check the accuracy of the network to see if it is increased or not.
+In the paper, Hinton et al claims that more iterations tends to overfit the data and it is recommended to use 3 routing iterations in practice. To test his idea, we will try to train the Capsule Network with 3, 5, 10, 15 iterations and check the accuracy of the network to see if it is increased or not. Here are some of the examples when training Capsule Network with different routing iterations:
+
+....
 
 Routing Iterations = 2
 ![routing iterations = 2](routing_2.PNG)
@@ -29,13 +31,15 @@ Routing Iterations = 5
 Routing Iterations = 10
 ![routing iterations = 10](routing_10.PNG)
 
+....
 
-| Routing Iterations  | Accuracy |
-| :---:               | :---:    |
-| 1                   |          |
-| 2                   | 0.9961   |
-| 3                   |          |
-| 5                   | 0.9932   |
-| 10                  | 0.9932   |
+| Routing Iterations  | Accuracy   |
+| :---:               | :---:      |
+| 1                   | 0.9899     |
+| **2**               | **0.9961** |
+| **3**               | **0.9965** |
+| **4**               | **0.9958** |
+| 5                   | 0.9932     |
+| 10                  | 0.9932     |
 
 As we can see, we get the high accuracy when routings iterations are from 2 to 4. After that, when we increase the routing iterations more, the accuracy does not improve and even tends to decrease by around 0.003. Therefore, we can conclude that the capsule network works well when routing iterations are in range [2, 4] 
