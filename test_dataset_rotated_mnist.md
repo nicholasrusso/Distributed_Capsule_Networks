@@ -11,7 +11,7 @@ Baseline Network - Randomly Rotated [-30, +30]
 ![1](baseline_Rotated_MNIST_30.PNG)
 
 Capsule Network - Randomly Rotated [-30, +30]
-![2](Capsule_Rotated_MNIST_30.png)
+![Capsule_Rotated_MNIST_30](Capsule_Rotated_MNIST_30.png)
 
 Baseline Network - Randomly Rotated [-60, +60]
 
