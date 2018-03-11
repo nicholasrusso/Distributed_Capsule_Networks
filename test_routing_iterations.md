@@ -35,11 +35,11 @@ Routing Iterations = 10
 
 | Routing Iterations  | Accuracy   |
 | :---:               | :---:      |
-| 1                   | 0.9899     |
+| 1                   | 0.9834     |
 | **2**               | **0.9961** |
 | **3**               | **0.9965** |
 | **4**               | **0.9958** |
 | 5                   | 0.9932     |
 | 10                  | 0.9932     |
 
-As we can see, we get the high accuracy when routings iterations are from 2 to 4. After that, when we increase the routing iterations more, the accuracy does not improve and even tends to decrease by around 0.003. Therefore, we can conclude that the capsule network works well when routing iterations are in range [2, 4] 
+As we can see, we get the high accuracy when routings iterations are from 2 to 4. After that, when we increase the routing iterations more, the accuracy does not improve and even tends to decrease by around 0.003. It makes sense because when routing iterations = 1, we do not have enough iterations to actually learn / establish connection between low-level and high-level capsules. Therefore, the accuracy at that time is lower than other accuracies from other routing iterations. When we increase the routing iterations to 5 or 10, the accuracy tends to stay the same because the connections between low-level and high-level capsules are stablized at that time. So more iterations do not help in this case. Therefore, we can conclude that the capsule network works well when routing iterations are in range [2, 4] 
