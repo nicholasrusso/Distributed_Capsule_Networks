@@ -6,8 +6,8 @@ Therefore, to test the robustness of capsule network, we will use rotated MNIST.
 
 First, we train both baseline network and capsule network on the normal 28x28 MNIST dataset. After that, we randomly rotated the test set to some degrees. Here are the experiment results:
 
-| Rotate         | Baseline Network  | Capsule Network   |
-| :---:          |:---:              | :---:             |
-| 30<sup>o</sup> | 0.9525            | 0.9582            |
-| 60<sup>o</sup> | **0.7424**        | **0.7635**        |
+| Randomly Rotate                    | Baseline Network  | Capsule Network   |
+| :---:                              |:---:              | :---:             |
+| [-30<sup>o</sup>, +30<sup>o</sup>] | 0.9525            | 0.9582            |
+| [-60<sup>o</sup>, +60<sup>o</sup>] | **0.7424**        | **0.7635**        |
 
