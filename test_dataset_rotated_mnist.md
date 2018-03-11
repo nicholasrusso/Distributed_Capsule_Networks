@@ -8,7 +8,7 @@ Therefore, to test the robustness of capsule network, we will use rotated MNIST.
 
 ### How to test the robustness of Capsule Network
 
-First, we train both baseline network and capsule network on the normal 28x28 MNIST dataset. After that, we randomly rotated the test set to some degrees. 
+First, we train both baseline network and capsule network on the normal 28x28 MNIST dataset. After that, we randomly rotated the test set to some degrees and run the experiment on this test set. For capsule network parameter, we use 7 machines with epochs = 25 and batch size = 64.
 
 **Normal MNIST for training**
 ![Normal MNIST for training](https://raw.githubusercontent.com/shinseung428/CapsNet_Tensorflow/master/images/mnist_gt.jpg)
