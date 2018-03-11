@@ -19,9 +19,11 @@ Therefore, after *r* times, all outputs for higher level capsules were calculate
 
 ### How many routing iterations are sufficient?
 In the paper, Hinton et al claims that more iterations tends to overfit the data and it is recommended to use 3 routing iterations in practice. To test his idea, we will try to train the Capsule Network with 3, 5, 10, 15 iterations and check the accuracy of the network to see if it is increased or not.
-![routing iterations = 2](routing_2.png)
-![routing iterations = 5](routing_5.png)
-![routing iterations = 10](routing_10.png)
+![routing iterations = 2](routing_2.PNG)
+
+![routing iterations = 5](routing_5.PNG)
+
+![routing iterations = 10](routing_10.PNG)
 
 | Routing Iterations  | Accuracy |
 | :---:               | :---:    |
