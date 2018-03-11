@@ -34,3 +34,4 @@ This blog documents our experiences working on our experiments with capsule netw
 - 3 March 2018,  [_Testing Capsule Network with different optimizers_](test_optimizer.md)
 - 7 March 2018,  [_Testing Capsule Network with different routing iterations_](test_routing_iterations.md)
 - 8 March 2018,  [_Testing Capsule Network with different dataset: Rotated MNIST_](test_dataset_rotated_mnist.md)
+- 8 March 2018,  [_Takeaway_](khanh_takeaway.md)
