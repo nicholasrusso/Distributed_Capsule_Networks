@@ -5,14 +5,17 @@ As we know, the convolutional neural network makes neural activity **invariant**
 
 Therefore, to test the robustness of capsule network, we will use rotated MNIST. We will have 2 models to compare the result: one is the baseline network, the other is our capsule network. The architecture of the baseline network is taken from the original paper [Dynamic Routing Between Capsules](https://arxiv.org/pdf/1710.09829.pdf). This is a standard CNN with three convolutional layers are followed by 2 fully connected layers of size 328, 192. The last fully connected layer is connected with dropout to a 10 class softmax layer with cross entropy loss. This baseline network is already implemented through this [link](https://github.com/shinseung428/CapsNet_Tensorflow/blob/master/models/baseline_network.py). 
 
+
 ### How to test the robustness of Capsule Network
 
 First, we train both baseline network and capsule network on the normal 28x28 MNIST dataset. After that, we randomly rotated the test set to some degrees. 
+
 **Normal MNIST for training**
 ![Normal MNIST for training](https://raw.githubusercontent.com/shinseung428/CapsNet_Tensorflow/master/images/mnist_gt.jpg)
 
 **Rotated MNIST for testing**
 ![Rotated MNIST for testing](https://raw.githubusercontent.com/shinseung428/CapsNet_Tensorflow/master/images/mnist_rotated.jpg)
+
 
 ### Run experiment and results
 Baseline Network - Randomly Rotated [-30, +30]
@@ -20,6 +23,7 @@ Baseline Network - Randomly Rotated [-30, +30]
 ![1](baseline_Rotated_MNIST_30.PNG)
 
 Capsule Network - Randomly Rotated [-30, +30]
+
 ![Capsule_Rotated_MNIST_30](Capsule_Rotated_MNIST_30.png)
 
 Baseline Network - Randomly Rotated [-60, +60]
@@ -29,6 +33,7 @@ Baseline Network - Randomly Rotated [-60, +60]
 Capsule Network - Randomly Rotated [-60, +60]
 
 ![4](Capsule_Rotated_MNIST_60.PNG)
+
 
 | Randomly Rotate                    | Baseline Network  | Capsule Network   |
 | :---:                              |:---:              | :---:             |
