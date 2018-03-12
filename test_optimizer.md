@@ -66,8 +66,10 @@ Those optimizers are the most currently in deep learning models. We will test th
 
 | Optimizer           | Accuracy |
 | :---:               | :---:    |
-| SGD                 |          |
-| SGD with momentum   |          |
-| Adagrad             |          |
-| RMSprop             |          |
+| SGD                 | 0.9778   |
+| SGD with momentum   | 0.9932   |
+| Adagrad             | 0.9825   |
+| RMSprop             | 0.9948   |
 | Adam                | 0.9953   |
+
+According to the results, we can see Adam, RMSprop, and SGD with momentum are among the best optimizers when training capsule network
